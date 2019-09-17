@@ -4,10 +4,10 @@ one:
   name: MyString
   model: MyString
   country: MyString
-  vin: 
+  vin: 1
 
 two:
   name: MyString
   model: MyString
   country: MyString
-  vin: 
+  vin: 1
