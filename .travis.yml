@@ -1,0 +1,12 @@
+language: ruby
+rvm: — 2.6
+
+dist: xenial
+
+addons:
+
+before_install:
+
+script: - bundle exec rails test
+
+after_success:
