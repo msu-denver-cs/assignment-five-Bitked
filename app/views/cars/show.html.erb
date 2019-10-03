@@ -1,18 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Make:</strong>
-  <%= @car.make %>
-</p>
-
-<p>
   <strong>Model:</strong>
   <%= @car.model %>
-</p>
-
-<p>
-  <strong>Country:</strong>
-  <%= @car.country %>
 </p>
 
 <p>
@@ -20,10 +10,20 @@
   <%= @car.vin %>
 </p>
 
+<p>
+  <strong>Make:</strong>
+  <%= @car.make.make %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @car.make.country %>
+</p>
+
 <strong>Parts:</strong>
 <ul>
   <% @car.parts.each do |part| %>
-    <li><%= part.name %></li>
+    <li><%= part.part %></li>
   <% end %>
 </ul>
 

@@ -12,18 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :make %>
-    <%= form.text_field :make %>
-  </div>
-
-  <div class="field">
     <%= form.label :model %>
     <%= form.text_field :model %>
-  </div>
-
-  <div class="field">
-    <%= form.label :country %>
-    <%= form.text_field :country %>
   </div>
 
   <div class="field">
@@ -32,8 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :car_Parts %><br>
-    <%= form.collection_check_boxes(:part_ids, @parts, :id, :name) %>
+  <%= form.label :make_id %><br>
+  <%= form.collection_select(:make_id, Make.all, :id, :make) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :car_parts %><br>
+    <%= form.collection_check_boxes(:part_ids, Part.all, :id, :part) %>
   </div>
 
   <div class="actions">

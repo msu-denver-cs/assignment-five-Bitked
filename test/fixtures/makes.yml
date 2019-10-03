@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  part: MyString
+  make: MyString
+  country: MyString
 
 two:
-  part: MyString
+  make: MyString
+  country: MyString

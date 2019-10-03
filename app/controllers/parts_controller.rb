@@ -16,6 +16,7 @@ class PartsController < ApplicationController
   def new
     @part = Part.new
     @cars = Car.all
+
   end
 
   # GET /parts/1/edit
@@ -71,6 +72,6 @@ class PartsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def part_params
-      params.require(:part).permit(:name, :car_ids => [])
+      params.require(:part).permit(:part)
     end
 end

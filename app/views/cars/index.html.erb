@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Make</th>
       <th>Model</th>
-      <th>Country</th>
       <th>Vin</th>
+      <th>Make</th>
+      <th>Country</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @cars.each do |car| %>
       <tr>
-        <td><%= car.make %></td>
         <td><%= car.model %></td>
-        <td><%= car.country %></td>
         <td><%= car.vin %></td>
+        <td><%= car.make.make %></td>
+        <td><%= car.make.country %></td>
         <td><%= link_to 'Show', car %></td>
         <td><%= link_to 'Edit', edit_car_path(car) %></td>
         <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
