@@ -15,10 +15,13 @@ class CarsController < ApplicationController
   # GET /cars/new
   def new
     @car = Car.new
+    @parts = Part.all
+
   end
 
   # GET /cars/1/edit
   def edit
+    @parts = Part.all
   end
 
   # POST /cars
@@ -61,6 +64,12 @@ class CarsController < ApplicationController
     end
   end
 
+  def search
+    @cars = Car.where("vin like?", "%#{params[:query]}%")
+    @cars = Car.where("model like?", "%#{params[:query]}%")
+    render :index
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_car
@@ -69,6 +78,6 @@ class CarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def car_params
-      params.require(:car).permit(:model, :vin, :make_id)
+      params.require(:car).permit(:model, :vin, :make_id, :part_ids => [])
     end
 end

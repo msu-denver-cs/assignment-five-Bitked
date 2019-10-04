@@ -21,9 +21,15 @@
     <%= form.text_field :vin %>
   </div>
 
+
   <div class="field">
-    <%= form.label :make_id %>
-    <%= form.text_field :make_id %>
+    <%= form.label :make_id %><br>
+    <%= form.collection_select(:make_id, Make.all, :id, :make) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :car_parts %><br>
+    <%= form.collection_check_boxes(:part_ids, Part.all, :id, :part) %>
   </div>
 
   <div class="actions">

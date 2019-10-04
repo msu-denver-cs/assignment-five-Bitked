@@ -12,8 +12,20 @@
 
 <p>
   <strong>Make:</strong>
-  <%= @car.make %>
+  <%= @car.make.make %>
 </p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @car.make.country %>
+</p>
+
+<strong>Parts:</strong>
+<ul>
+  <% @car.parts.each do |part| %>
+    <li><%= part.part %></li>
+  <% end %>
+</ul>
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
