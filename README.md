@@ -1,24 +1,2 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I realized Imediately after connecting to GitHub classoom assignment-two how much I should have been using branches and squashing commits. On solo projects I dont care so much becasuse I usually just use the final product once and then move on, however it is extremely annoying to look at all my small commits for project-one on project-two by copying same project. From now on I aim to keep everything much cleaner and less messy, for others to more easily read my progress and such.
