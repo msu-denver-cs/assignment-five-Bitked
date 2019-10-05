@@ -15,14 +15,6 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create part" do
-    assert_difference('Part.count') do
-      post parts_url, params: { part: { part: @part.part } }
-    end
-
-    assert_redirected_to part_url(Part.last)
-  end
-
   test "should show part" do
     get part_url(@part)
     assert_response :success
@@ -31,6 +23,13 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
   test "should get edit" do
     get edit_part_url(@part)
     assert_response :success
+  end
+
+  test "should create part" do
+    assert_difference('Part.count') do
+      post parts_url, params: { part: { part: @part.part } }
+    end
+    assert_redirected_to part_url(Part.last)
   end
 
   test "should update part" do
@@ -42,7 +41,28 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
     assert_difference('Part.count', -1) do
       delete part_url(@part)
     end
-
     assert_redirected_to parts_url
   end
+
+
+  test "should find p1" do
+    get search_parts_url, params: { search: "p1" }
+    assert_select 'td', 'p1'
+  end 
+
+  test "should find p2" do
+    get search_parts_url, params: { search: "p2" }
+    assert_select 'td', 'p2'
+  end 
+
+  # needs assert
+  test "shouldn't find a Part" do
+    assert Part.where("part like ?", "NOT part")
+  end
+
+  test "searches always return 200" do
+    get search_parts_url, params: { search: "DOESNT EXIST" }
+    assert_equal 200, status
+  end
+
 end
