@@ -5,12 +5,12 @@ class CarTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  test "for two character model" do
-    s = Car.create({:model => "aa"})
-    assert s.valid?
-    assert s.save
-    assert_equal({}, s.errors.messages)
-  end
+  # test "for two character model" do
+  #   s = Car.create({:model => "aa"})
+  #   assert s.valid?
+  #   assert s.save
+  #   assert_equal({}, s.errors.messages)
+  # end
 
   # test "for 6 character vin" do
   #   s = Car.create({:vin => "123456"})
@@ -18,6 +18,4 @@ class CarTest < ActiveSupport::TestCase
   #   assert s.save
   #   assert_equal({}, s.errors.messages)
   # end
-
-
 end

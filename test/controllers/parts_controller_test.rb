@@ -55,14 +55,24 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'td', 'p2'
   end 
 
-  # needs assert
-  test "shouldn't find a Part" do
-    assert Part.where("part like ?", "NOT part")
+  test "for one character name" do
+    s = Part.create({:part => "a"})
+    refute s.valid?
+    refute s.save
+    assert_equal({:part=>["is too short (minimum is 2 characters)"]},
+      s.errors.messages)
+  end
+
+  test "for two character name" do
+    s = Part.create({:part => "aa"})
+    assert s.valid?
+    assert s.save
+    assert_equal({}, s.errors.messages)
   end
 
   test "searches always return 200" do
     get search_parts_url, params: { search: "DOESNT EXIST" }
     assert_equal 200, status
+    #missing statement here?
   end
-
 end
