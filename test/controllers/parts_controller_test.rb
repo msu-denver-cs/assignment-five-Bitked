@@ -70,9 +70,15 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
     assert_equal({}, s.errors.messages)
   end
 
+  # needs assert? same thing?
+  test "shouldn't find a Part" do
+    assert Part.where("part like ?", "NOT part")
+  end
+
   test "searches always return 200" do
     get search_parts_url, params: { search: "DOESNT EXIST" }
     assert_equal 200, status
-    #missing statement here?
   end
 end
+
+

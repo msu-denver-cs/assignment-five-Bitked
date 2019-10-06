@@ -53,8 +53,8 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
   end 
 
   test "should find 222111" do
-    get search_cars_url, params: { search: "222333" }
-    assert_select 'td', '222333'
+    get search_cars_url, params: { search: "222111" }
+    assert_select 'td', '222111'
   end 
 
   test "should find Ranger" do
@@ -67,21 +67,14 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'td', 'Rav4'
   end 
 
-
-
-
-  # needs assert?
+  
+  # needs assert? same thing?
   test "shouldn't find a model" do
     assert Car.where("model like ?", "NOT model")
-    #missing statement here?
   end
-
 
   test "searches always return 200" do
-    get search_cars_url, params: { search: "DOESN'T EXIST" }
+    get search_cars_url, params: { search: "DOESNT EXIST" }
     assert_equal 200, status
-    #missing statement here?
-
   end
-
 end
