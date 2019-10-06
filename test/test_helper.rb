@@ -6,5 +6,20 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  require 'simplecov'
+SimpleCov.formatter = SimpleCov::Formatter::SimpleFormatter
+
+# Have to have this even though it's supposed to be the default
+SimpleCov.at_exit do
+  puts SimpleCov.result.format!
+end
+
+# Have to have these even though they're not required for the default formatter.
+SimpleCov.start do
+  add_group "app", "app"
+  add_group "test", "test"
+end
   # Add more helper methods to be used by all tests here...
 end
+
+
