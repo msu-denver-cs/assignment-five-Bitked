@@ -18,8 +18,4 @@ class CarTest < ActiveSupport::TestCase
   #   assert s.save
   #   assert_equal({}, s.errors.messages)
   # end
-
-  
-
-
 end

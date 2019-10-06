@@ -69,22 +69,19 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
 
 
 
-  # needs assert
-  # test "shouldn't find a model" do
-  #   assert Car.where("model like ?", "NOT model")
-  # end
 
-  # test "shouldn't find a vin" do
-  #   assert Car.where("model like ?", "NOT vin")
-  # end
+  # needs assert?
+  test "shouldn't find a model" do
+    assert Car.where("model like ?", "NOT model")
+    #missing statement here?
+  end
 
-  # test "shouldn't find a make" do
-  #   assert Car.where("make_id like ?", "NOT make_id")
-  # end
 
-  # test "searches always return 200" do
-  #   get search_cars_url, params: { search: "DOESNT EXIST" }
-  #   assert_equal 200, status
-  # end
+  test "searches always return 200" do
+    get search_cars_url, params: { search: "DOESN'T EXIST" }
+    assert_equal 200, status
+    #missing statement here?
+
+  end
 
 end
