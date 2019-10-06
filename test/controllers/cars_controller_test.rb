@@ -53,8 +53,8 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
   end 
 
   test "should find 222111" do
-    get search_cars_url, params: { search: "222111" }
-    assert_select 'td', '222111'
+    get search_cars_url, params: { search: "222333" }
+    assert_select 'td', '222333'
   end 
 
   test "should find Ranger" do
