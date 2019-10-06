@@ -53,8 +53,8 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
   end 
 
   test "should find 222111" do
-    get search_cars_url, params: { search: "222111" }
-    assert_select 'td', '222111'
+    get search_cars_url, params: { search: "222333" }
+    assert_select 'td', '222333'
   end 
 
   test "should find Ranger" do
@@ -67,22 +67,24 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'td', 'Rav4'
   end 
 
+
+
   # needs assert
-  test "shouldn't find a model" do
-    assert Car.where("model like ?", "NOT model")
-  end
+  # test "shouldn't find a model" do
+  #   assert Car.where("model like ?", "NOT model")
+  # end
 
-  test "shouldn't find a vin" do
-    assert Car.where("model like ?", "NOT vin")
-  end
+  # test "shouldn't find a vin" do
+  #   assert Car.where("model like ?", "NOT vin")
+  # end
 
-  test "shouldn't find a make" do
-    assert Car.where("make_id like ?", "NOT make_id")
-  end
+  # test "shouldn't find a make" do
+  #   assert Car.where("make_id like ?", "NOT make_id")
+  # end
 
-  test "searches always return 200" do
-    get search_cars_url, params: { search: "DOESNT EXIST" }
-    assert_equal 200, status
-  end
+  # test "searches always return 200" do
+  #   get search_cars_url, params: { search: "DOESNT EXIST" }
+  #   assert_equal 200, status
+  # end
 
 end
