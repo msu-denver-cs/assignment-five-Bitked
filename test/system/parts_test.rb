@@ -40,11 +40,18 @@ class PartsTest < ApplicationSystemTestCase
 
     assert_text "Part was successfully destroyed"
   end
-  
+
   test "search doesn't exist" do
-    visit cars_url
+    visit parts_url
     fill_in "Search", with: "NOT EXIST"
     click_on "Search"
     refute_selector "td"
+  end
+
+  test "search part" do
+    visit parts_url
+    fill_in "Search", with: "p1"
+    click_on "Search"
+    assert_selector "td", text: "p1"
   end
 end

@@ -52,11 +52,10 @@ class CarsTest < ApplicationSystemTestCase
     refute_selector "td"
   end
 
-  # test "search vin" do
-  #   visit cars_url
-  #   fill_in "search", with: "111111"
-  #   click_on "Search"
-  #   assert_selector "td", text: "111111"
-  # end
-
+  test "search vin" do
+    visit cars_url
+    fill_in "Search", with: "111222"
+    click_on "Search"
+    assert_selector "td", text: "111222"
+  end
 end
