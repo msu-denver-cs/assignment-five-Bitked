@@ -44,4 +44,19 @@ class CarsTest < ApplicationSystemTestCase
 
     assert_text "Car was successfully destroyed"
   end
+
+  test "search doesn't exist" do
+    visit cars_url
+    fill_in "Search", with: "NOT EXIST"
+    click_on "Search"
+    refute_selector "td"
+  end
+
+  # test "search vin" do
+  #   visit cars_url
+  #   fill_in "search", with: "111111"
+  #   click_on "Search"
+  #   assert_selector "td", text: "111111"
+  # end
+
 end
