@@ -5,7 +5,7 @@ dist: xenial
 
 addons:
 
-before_install:
+before_install: -gem install bundler -v 2.0.2
 
 script: - bundle exec rails test
 

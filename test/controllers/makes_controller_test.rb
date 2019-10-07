@@ -37,6 +37,18 @@ class MakesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to make_url(@make)
   end
 
+  test "should NOT create make" do
+    assert_no_difference('Make.count') do
+      post makes_url, params: { make: { country: 'a', make: 'a' } }
+    end
+  assert_response :success
+  end
+
+  test "should NOT update make" do
+    patch make_url(@make), params: { make: { country: 'a', make: 'a'} }
+  assert_response :success
+  end
+
   test "should destroy make" do
     assert_difference('Make.count', -1) do
       delete make_url(@make)

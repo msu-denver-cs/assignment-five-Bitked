@@ -6,9 +6,9 @@
     <%= label_tag(:query, "Search for:") %>
     <%= text_field_tag(:query) %>
     <%= submit_tag("Search") %>
-<% end %>
-
-<br/><div id="results"></div>
+    <% end %>
+    
+    <br/><div id="results"></div>
 
 <script>
 var QueryURL = "http://localhost:3000/books/search.json?query=";

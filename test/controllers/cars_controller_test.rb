@@ -38,6 +38,18 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to car_url(@car)
   end
 
+  test "should NOT create car" do
+    assert_no_difference('Car.count') do
+      post cars_url, params: { car: { make_id: 'a' , model: 'a', vin: 'a'} }
+    end
+  assert_response :success
+  end
+
+  test "should NOT update car" do
+    patch car_url(@car), params: { car: { make_id: 'a', model: 'a', vin: 'a' } }
+  assert_response :success
+  end
+
   test "should destroy car" do
     assert_difference('Car.count', -1) do
       delete car_url(@car)
@@ -45,7 +57,6 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to cars_url
   end
-
 
   test "should find 111222" do
     get search_cars_url, params: { search: "111222" }

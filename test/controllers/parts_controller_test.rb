@@ -37,13 +37,24 @@ class PartsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to part_url(@part)
   end
 
+  test "should NOT create part" do
+    assert_no_difference('Part.count') do
+      post parts_url, params: { part: { part: 'a' } }
+    end
+  assert_response :success
+  end
+
+  test "should NOT update part" do
+    patch part_url(@part), params: { part: { part: 'a' } }
+    assert_response :success
+  end
+
   test "should destroy part" do
     assert_difference('Part.count', -1) do
       delete part_url(@part)
     end
     assert_redirected_to parts_url
   end
-
 
   test "should find p1" do
     get search_parts_url, params: { search: "p1" }
