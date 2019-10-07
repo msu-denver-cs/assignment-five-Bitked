@@ -43,17 +43,17 @@ class MakesTest < ApplicationSystemTestCase
     assert_text "Make was successfully destroyed"
   end
 
-  test "search doesn't exist" do
-    visit makes_url
-    fill_in "Search", with: "NOT EXIST"
-    click_on "Search"
-    refute_selector "td"
-  end
+  # test "search doesn't exist" do
+  #   visit makes_url
+  #   fill_in "Search", with: "NOT EXIST"
+  #   click_on "Search"
+  #   refute_selector "td"
+  # end
 
-  test "search make" do
-    visit makes_url
-    fill_in "Search", with: "BYD"
-    click_on "Search"
-    assert_selector "td", text: "BYD"
-  end
+  # test "search make" do
+  #   visit makes_url
+  #   fill_in "Search", with: "BYD"
+  #   click_on "Search"
+  #   assert_selector "td", text: "BYD"
+  # end
 end

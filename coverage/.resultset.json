@@ -257,7 +257,7 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/cars_controller.rb": [
+      "/home/birt/Documents/assignment-two-Bitked/app/controllers/makes_controller.rb": [
         1,
         1,
         1,
@@ -276,12 +276,9 @@
         null,
         1,
         1,
-        1,
         null,
         null,
         null,
-        null,
-        1,
         1,
         null,
         null,
@@ -446,7 +443,7 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/makes_controller.rb": [
+      "/home/birt/Documents/assignment-two-Bitked/app/controllers/cars_controller.rb": [
         1,
         1,
         1,
@@ -465,9 +462,12 @@
         null,
         1,
         1,
+        1,
         null,
         null,
         null,
+        null,
+        1,
         1,
         null,
         null,
@@ -529,6 +529,6 @@
         null
       ]
     },
-    "timestamp": 1570477390
+    "timestamp": 1570479060
   }
 }

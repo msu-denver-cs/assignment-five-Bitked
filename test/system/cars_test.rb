@@ -45,17 +45,34 @@ class CarsTest < ApplicationSystemTestCase
     assert_text "Car was successfully destroyed"
   end
 
-  test "search doesn't exist" do
-    visit cars_url
-    fill_in "Search", with: "NOT EXIST"
-    click_on "Search"
-    refute_selector "td"
-  end
 
-  test "search vin" do
-    visit cars_url
-    fill_in "Search", with: "111222"
-    click_on "Search"
-    assert_selector "td", text: "111222"
-  end
+
+
+
+
+  # test "NOT creating a Car" do
+  #   visit cars_url
+  #   click_on "New Car"
+
+  #   # select("BYD", from: "Make")
+  #   fill_in "Model", with: 'a'
+  #   fill_in "Vin", with: 'a'
+  #   click_on "Create Car"
+
+  #   assert_text "unprocessable_entity"
+  #   click_on "Back"
+  # end
+
+  # test "NOT updating a Car" do
+  #   visit cars_url
+  #   click_on "Edit", match: :first
+
+  #   # select("Zenvo", from: "Make")    
+  #   fill_in "Model", with: 'a'
+  #   fill_in "Vin", with: 'a'
+  #   click_on "Update Car"
+
+  #   assert_text "Car was successfully updated"
+  #   click_on "Back"
+  # end
 end
