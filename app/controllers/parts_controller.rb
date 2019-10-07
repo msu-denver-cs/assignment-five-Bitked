@@ -1,4 +1,5 @@
 class PartsController < ApplicationController
+  autocomplete :part, :part, full_search: true
   before_action :set_part, only: [:show, :edit, :update, :destroy]
 
   # GET /parts
@@ -64,7 +65,7 @@ class PartsController < ApplicationController
   end
 
   def search
-    @parts = Part.where("part like?", "%#{params[:query]}%")
+    @parts = Part.where("part like?", "%#{params[:search]}%")
     render :index
   end
 

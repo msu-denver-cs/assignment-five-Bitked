@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+  autocomplete :car, :vin, full_search: true
   before_action :set_car, only: [:show, :edit, :update, :destroy]
 
   # GET /cars
@@ -65,7 +66,7 @@ class CarsController < ApplicationController
   end
 
   def search
-    @cars = Car.where("vin like?", "%#{params[:query]}%")
+    @cars = Car.where("vin like?", "%#{params[:search]}%")
     render :index
   end
 
