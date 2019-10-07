@@ -66,7 +66,7 @@ class CarsController < ApplicationController
   end
 
   def search
-    @cars = Car.where("vin like?", "%#{params[:search]}%")
+    @cars = Car.where("vin like?", "%#{params[:query]}%")
     render :index
   end
 

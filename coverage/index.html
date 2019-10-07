@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-07T13:11:09-06:00">2019-10-07T13:11:09-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-07T13:43:10-06:00">2019-10-07T13:43:10-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.42
+         1.39
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>19</b> files in total.
-    <b>252</b> relevant lines. 
-    <span class="green"><b>252</b> lines covered</span> and
+    <b>255</b> relevant lines. 
+    <span class="green"><b>255</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,19 +63,19 @@
       <tr>
         <td class="strong"><a href="#51d90cc4223bc48be168619628b27032dab385d1" class="src_link" title="app/controllers/cars_controller.rb">app/controllers/cars_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>82</td>
-        <td>38</td>
-        <td>38</td>
+        <td>83</td>
+        <td>39</td>
+        <td>39</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#fcf382966d3c479e89ddacf4c6a2d849257c1f75" class="src_link" title="app/controllers/makes_controller.rb">app/controllers/makes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>79</td>
-        <td>36</td>
-        <td>36</td>
+        <td>80</td>
+        <td>37</td>
+        <td>37</td>
         <td>0</td>
         <td>1.7</td>
       </tr>
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#6184de9e76b5d65ff5f5a33a729f1a89f2d08ee2" class="src_link" title="app/controllers/parts_controller.rb">app/controllers/parts_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>81</td>
-        <td>38</td>
-        <td>38</td>
+        <td>82</td>
+        <td>39</td>
+        <td>39</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -253,15 +253,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.54
+         1.49
        </span>
     </span> hits/line)
   </h2>
   <a name="app"></a>
   <div>
     <b>13</b> files in total.
-    <b>138</b> relevant lines. 
-    <span class="green"><b>138</b> lines covered</span> and
+    <b>141</b> relevant lines. 
+    <span class="green"><b>141</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -291,19 +291,19 @@
       <tr>
         <td class="strong"><a href="#51d90cc4223bc48be168619628b27032dab385d1" class="src_link" title="app/controllers/cars_controller.rb">app/controllers/cars_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>82</td>
-        <td>38</td>
-        <td>38</td>
+        <td>83</td>
+        <td>39</td>
+        <td>39</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#fcf382966d3c479e89ddacf4c6a2d849257c1f75" class="src_link" title="app/controllers/makes_controller.rb">app/controllers/makes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>79</td>
-        <td>36</td>
-        <td>36</td>
+        <td>80</td>
+        <td>37</td>
+        <td>37</td>
         <td>0</td>
         <td>1.7</td>
       </tr>
@@ -311,11 +311,11 @@
       <tr>
         <td class="strong"><a href="#6184de9e76b5d65ff5f5a33a729f1a89f2d08ee2" class="src_link" title="app/controllers/parts_controller.rb">app/controllers/parts_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>81</td>
-        <td>38</td>
-        <td>38</td>
+        <td>82</td>
+        <td>39</td>
+        <td>39</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -556,8 +556,8 @@
     <h3>app/controllers/cars_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>38</b> relevant lines. 
-      <span class="green"><b>38</b> lines covered</span> and
+      <b>39</b> relevant lines. 
+      <span class="green"><b>39</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -574,109 +574,1125 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_action :set_car, only: [:show, :edit, :update, :destroy]</code>
+          <code class="ruby">  autocomplete :car, :vin, full_search: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  before_action :set_car, only: [:show, :edit, :update, :destroy]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">  # GET /cars</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">  # GET /cars.json</code>
+          <code class="ruby">  # GET /cars</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">  def index</code>
+          
+          <code class="ruby">  # GET /cars.json</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    @cars = Car.all</code>
+          <code class="ruby">  def index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @cars = Car.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  # GET /cars/1</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
+          <code class="ruby">  # GET /cars/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
           <code class="ruby">  # GET /cars/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  # GET /cars/new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">    @car = Car.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">    @parts = Part.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  # GET /cars/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @parts = Part.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # POST /cars</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # POST /cars.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="31">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @car = Car.new(car_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="33">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="34">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if @car.save</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to @car, notice: &#39;Car was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render :show, status: :created, location: @car }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { render :new }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render json: @car.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  # PATCH/PUT /cars/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  # PATCH/PUT /cars/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if @car.update(car_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to @car, notice: &#39;Car was successfully updated.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render :show, status: :ok, location: @car }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { render :edit }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render json: @car.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  # DELETE /cars/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  # DELETE /cars/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @car.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="63">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.html { redirect_to cars_url, notice: &#39;Car was successfully destroyed.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="69">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @cars = Car.where(&quot;vin like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="70">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    render :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_car</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="76">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @car = Car.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def car_params</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="81">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      params.require(:car).permit(:model, :vin, :make_id, :part_ids =&gt; [])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="fcf382966d3c479e89ddacf4c6a2d849257c1f75">
+  <div class="header">
+    <h3>app/controllers/makes_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>37</b> relevant lines. 
+      <span class="green"><b>37</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class MakesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  autocomplete :make, :make, full_search: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_make, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # GET /makes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # GET /makes.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @makes = Make.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # GET /makes/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # GET /makes/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  # GET /makes/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @make = Make.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  # GET /makes/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # POST /makes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # POST /makes.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="28">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @make = Make.new(make_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="31">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if @make.save</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="32">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to @make, notice: &#39;Make was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render :show, status: :created, location: @make }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { render :new }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render json: @make.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  # PATCH/PUT /makes/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">  # PATCH/PUT /makes/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if @make.update(make_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to @make, notice: &#39;Make was successfully updated.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render :show, status: :ok, location: @make }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { render :edit }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render json: @make.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  # DELETE /makes/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  # DELETE /makes/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @make.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="60">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.html { redirect_to makes_url, notice: &#39;Make was successfully destroyed.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="66">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @makes = Make.where(&quot;make like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="67">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    render :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_make</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="73">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @make = Make.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def make_params</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="78">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      params.require(:make).permit(:make, :country)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="6184de9e76b5d65ff5f5a33a729f1a89f2d08ee2">
+  <div class="header">
+    <h3>app/controllers/parts_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>39</b> relevant lines. 
+      <span class="green"><b>39</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class PartsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  autocomplete :part, :part, full_search: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_part, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # GET /parts</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # GET /parts.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @parts = Part.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # GET /parts/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # GET /parts/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  # GET /parts/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @part = Part.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @cars = Car.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
@@ -694,7 +1710,7 @@
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">  # GET /cars/1/edit</code>
+          <code class="ruby">  # GET /parts/1/edit</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
@@ -706,7 +1722,7 @@
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    @parts = Part.all</code>
+          <code class="ruby">    @cars = Car.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -724,13 +1740,13 @@
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  # POST /cars</code>
+          <code class="ruby">  # POST /parts</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">  # POST /cars.json</code>
+          <code class="ruby">  # POST /parts.json</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="29">
@@ -742,7 +1758,7 @@
         <li class="covered" data-hits="2" data-linenumber="30">
           <span class="hits">2</span>
           
-          <code class="ruby">    @car = Car.new(car_params)</code>
+          <code class="ruby">    @part = Part.new(part_params)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
@@ -760,19 +1776,19 @@
         <li class="covered" data-hits="2" data-linenumber="33">
           <span class="hits">2</span>
           
-          <code class="ruby">      if @car.save</code>
+          <code class="ruby">      if @part.save</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="34">
           <span class="hits">2</span>
           
-          <code class="ruby">        format.html { redirect_to @car, notice: &#39;Car was successfully created.&#39; }</code>
+          <code class="ruby">        format.html { redirect_to @part, notice: &#39;Part was successfully created.&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
-          <code class="ruby">        format.json { render :show, status: :created, location: @car }</code>
+          <code class="ruby">        format.json { render :show, status: :created, location: @part }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
@@ -790,7 +1806,7 @@
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">        format.json { render json: @car.errors, status: :unprocessable_entity }</code>
+          <code class="ruby">        format.json { render json: @part.errors, status: :unprocessable_entity }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -820,13 +1836,13 @@
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">  # PATCH/PUT /cars/1</code>
+          <code class="ruby">  # PATCH/PUT /parts/1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  # PATCH/PUT /cars/1.json</code>
+          <code class="ruby">  # PATCH/PUT /parts/1.json</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="45">
@@ -844,19 +1860,19 @@
         <li class="covered" data-hits="2" data-linenumber="47">
           <span class="hits">2</span>
           
-          <code class="ruby">      if @car.update(car_params)</code>
+          <code class="ruby">      if @part.update(part_params)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="48">
           <span class="hits">2</span>
           
-          <code class="ruby">        format.html { redirect_to @car, notice: &#39;Car was successfully updated.&#39; }</code>
+          <code class="ruby">        format.html { redirect_to @part, notice: &#39;Part was successfully updated.&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">        format.json { render :show, status: :ok, location: @car }</code>
+          <code class="ruby">        format.json { render :show, status: :ok, location: @part }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
@@ -874,7 +1890,7 @@
         <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">        format.json { render json: @car.errors, status: :unprocessable_entity }</code>
+          <code class="ruby">        format.json { render json: @part.errors, status: :unprocessable_entity }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
@@ -904,13 +1920,13 @@
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">  # DELETE /cars/1</code>
+          <code class="ruby">  # DELETE /parts/1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">  # DELETE /cars/1.json</code>
+          <code class="ruby">  # DELETE /parts/1.json</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
@@ -922,7 +1938,7 @@
         <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">    @car.destroy</code>
+          <code class="ruby">    @part.destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="61">
@@ -934,7 +1950,7 @@
         <li class="covered" data-hits="2" data-linenumber="62">
           <span class="hits">2</span>
           
-          <code class="ruby">      format.html { redirect_to cars_url, notice: &#39;Car was successfully destroyed.&#39; }</code>
+          <code class="ruby">      format.html { redirect_to parts_url, notice: &#39;Part was successfully destroyed.&#39; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
@@ -967,14 +1983,14 @@
           <code class="ruby">  def search</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="68">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="68">
+          <span class="hits">3</span>
           
-          <code class="ruby">    @cars = Car.where(&quot;vin like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
+          <code class="ruby">    @parts = Part.where(&quot;part like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="69">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="69">
+          <span class="hits">3</span>
           
           <code class="ruby">    render :index</code>
         </li>
@@ -1006,13 +2022,13 @@
         <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
-          <code class="ruby">    def set_car</code>
+          <code class="ruby">    def set_part</code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="75">
           <span class="hits">5</span>
           
-          <code class="ruby">      @car = Car.find(params[:id])</code>
+          <code class="ruby">      @part = Part.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
@@ -1036,13 +2052,13 @@
         <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
-          <code class="ruby">    def car_params</code>
+          <code class="ruby">    def part_params</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="80">
           <span class="hits">4</span>
           
-          <code class="ruby">      params.require(:car).permit(:model, :vin, :make_id, :part_ids =&gt; [])</code>
+          <code class="ruby">      params.require(:part).permit(:part, :car_ids =&gt; [])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
@@ -1052,1004 +2068,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="fcf382966d3c479e89ddacf4c6a2d849257c1f75">
-  <div class="header">
-    <h3>app/controllers/makes_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>36</b> relevant lines. 
-      <span class="green"><b>36</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class MakesController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before_action :set_make, only: [:show, :edit, :update, :destroy]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  # GET /makes</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  # GET /makes.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def index</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @makes = Make.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  # GET /makes/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  # GET /makes/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">  # GET /makes/new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @make = Make.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">  # GET /makes/1/edit</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">  # POST /makes</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  # POST /makes.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @make = Make.new(make_params)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="29">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="30">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      if @make.save</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="31">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { redirect_to @make, notice: &#39;Make was successfully created.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render :show, status: :created, location: @make }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="34">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { render :new }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="35">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render json: @make.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">  # PATCH/PUT /makes/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">  # PATCH/PUT /makes/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def update</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="43">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      if @make.update(make_params)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="45">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { redirect_to @make, notice: &#39;Make was successfully updated.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render :show, status: :ok, location: @make }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="48">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { render :edit }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render json: @make.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">  # DELETE /makes/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">  # DELETE /makes/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def destroy</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="57">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @make.destroy</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="59">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      format.html { redirect_to makes_url, notice: &#39;Make was successfully destroyed.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def search</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="65">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @makes = Make.where(&quot;make like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="66">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    render :index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="69">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def set_make</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="72">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      @make = Make.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="73">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="74">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="75">
-          
-          
-          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="76">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def make_params</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="77">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      params.require(:make).permit(:make, :country)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="78">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="79">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="6184de9e76b5d65ff5f5a33a729f1a89f2d08ee2">
-  <div class="header">
-    <h3>app/controllers/parts_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>38</b> relevant lines. 
-      <span class="green"><b>38</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class PartsController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before_action :set_part, only: [:show, :edit, :update, :destroy]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  # GET /parts</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  # GET /parts.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def index</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @parts = Part.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  # GET /parts/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  # GET /parts/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">  # GET /parts/new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @part = Part.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @cars = Car.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">  # GET /parts/1/edit</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @cars = Car.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  # POST /parts</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">  # POST /parts.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="29">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @part = Part.new(part_params)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="31">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="32">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      if @part.save</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="33">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { redirect_to @part, notice: &#39;Part was successfully created.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render :show, status: :created, location: @part }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="36">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { render :new }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render json: @part.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">  # PATCH/PUT /parts/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">  # PATCH/PUT /parts/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def update</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="45">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="46">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      if @part.update(part_params)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="47">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { redirect_to @part, notice: &#39;Part was successfully updated.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render :show, status: :ok, location: @part }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="50">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.html { render :edit }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        format.json { render json: @part.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">  # DELETE /parts/1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  # DELETE /parts/1.json</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def destroy</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @part.destroy</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    respond_to do |format|</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="61">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      format.html { redirect_to parts_url, notice: &#39;Part was successfully destroyed.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      format.json { head :no_content }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def search</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="67">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @parts = Part.where(&quot;part like?&quot;, &quot;%#{params[:query]}%&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="68">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    render :index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def set_part</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="74">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      @part = Part.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="75">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="76">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="77">
-          
-          
-          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="78">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def part_params</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="79">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      params.require(:part).permit(:part, :car_ids =&gt; [])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="80">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">end</code>
