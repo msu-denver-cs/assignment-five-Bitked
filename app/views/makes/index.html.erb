@@ -4,7 +4,7 @@
 
 <%= form_tag(search_makes_url, method: "get") do %>
     <%= label_tag(:query, "Search by Make:") %>
-    <%= text_field_tag :search, params[:search], data: { autocomplete: autocomplete_make_make_makes_path } %>    <%= submit_tag("Search") %>
+    <%= text_field_tag :search, params[:search], data: { autocomplete: autocomplete_make_make_makes_path } %>
     <%= submit_tag("Search") %>
 <% end %>
 

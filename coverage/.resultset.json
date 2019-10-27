@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/birt/Documents/assignment-two-Bitked/test/controllers/makes_controller_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/controllers/makes_controller_test.rb": [
         1,
         null,
         1,
@@ -92,7 +92,7 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/test/controllers/parts_controller_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/controllers/parts_controller_test.rb": [
         1,
         null,
         1,
@@ -189,13 +189,13 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/test/models/car_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/models/car_test.rb": [
         1,
         null,
         1,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/test/models/cars_part_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/models/cars_part_test.rb": [
         1,
         null,
         1,
@@ -204,39 +204,19 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/test/models/make_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/models/make_test.rb": [
         1,
         null,
         1,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/test/models/part_test.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/test/models/part_test.rb": [
         1,
         null,
         1,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/models/part.rb": [
-        1,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/models/make.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/models/cars_part.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/models/cars_part.rb": [
         1,
         1,
         1,
@@ -245,7 +225,19 @@
         1,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/models/car.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/models/part.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/models/car.rb": [
         1,
         1,
         1,
@@ -257,109 +249,15 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/makes_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/models/make.rb": [
         1,
         1,
         null,
-        null,
-        null,
-        null,
         1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        2,
-        null,
-        2,
-        2,
-        2,
-        1,
-        null,
-        2,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        1,
-        null,
-        2,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        2,
-        1,
-        null,
-        null,
-        null,
-        1,
-        5,
-        5,
-        null,
-        null,
-        1,
-        null,
-        1,
-        5,
-        null,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/helpers/cars_helper.rb": [
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/helpers/makes_helper.rb": [
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/helpers/parts_helper.rb": [
-        1,
-        null
-      ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/parts_controller.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/controllers/parts_controller.rb": [
         1,
         1,
         1,
@@ -443,7 +341,27 @@
         null,
         null
       ],
-      "/home/birt/Documents/assignment-two-Bitked/app/controllers/cars_controller.rb": [
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/helpers/cars_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/helpers/makes_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/helpers/parts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/controllers/cars_controller.rb": [
         1,
         1,
         1,
@@ -468,6 +386,88 @@
         null,
         null,
         1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        2,
+        1,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        1,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        2,
+        1,
+        null,
+        null,
+        null,
+        1,
+        5,
+        5,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/birt/code/scr/rails/assignment-two-Bitked/app/controllers/makes_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
         1,
         null,
         null,
@@ -529,6 +529,6 @@
         null
       ]
     },
-    "timestamp": 1570479060
+    "timestamp": 1572209341
   }
 }
