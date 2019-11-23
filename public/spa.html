@@ -1,23 +1,46 @@
+
+<!DOCTYPE html>
+
+<html>
 <head>
-    <title>Bitked SPA</title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    </head>
-    <body>
-    
-    <div id="Itemlist">
-        <button v-on:click="doajax('cars')">cars</button>
-        <button v-on:click="doajax('makes')">makes</button>
-        <button v-on:click="doajax('parts')">parts</button>
+<title>Assignment-Five-Bitked</title>
+</head>
+<body>
 
-        <ul>
+<button onclick="fetch('cars', ['make_id', 'vin', 'model'])">Cars</button>
+<button onclick="fetch('makes', ['make', 'country'])">Makes</button>
+<button onclick="fetch('parts', ['part'])">Parts</button>
+<div id="display">
+</div>
 
-        </ul>
-    </div>
-    
-    <script type="text/javascript"> 
-   
-    </script>
-    
-    </body>
-    </html>
+<script>
+    /* Script by Dr. Beaty found here:  https://github.com/drsjb80/SPAs/blob/master/jsspa.html
+    */
+    let d = document.getElementById("display");
+    let clear = function() {
+        while(d.firstChild) {
+            d.removeChild(d.firstChild);
+        }
+    };
+    let post = function() {
+    };
+    let fetch = function(json, id) {
+        let request = new XMLHttpRequest();
+        var url = "http://localhost:3000/" + json + ".json";
+        request.onreadystatechange = function() {
+            if (request.readyState === 4 && request.status === 200) {
+                clear();
+                let arrayOfItems = JSON.parse(request.responseText);
+                for (i in arrayOfItems) {
+                    for (j in id) {
+                        document.getElementById("display").innerHTML += '<li>' + arrayOfItems[i][id[j]] + ' ' + '</li>';
+                    }
+                }
+            }
+        };
+        request.open("GET", url);
+        request.send(null);
+    };
+</script>
+
+</html>
