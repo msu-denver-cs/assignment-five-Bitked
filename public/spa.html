@@ -33,7 +33,7 @@
                 let arrayOfItems = JSON.parse(request.responseText);
                 for (i in arrayOfItems) {
                     for (j in id) {
-                        document.getElementById("display").innerHTML += '<li>' + arrayOfItems[i][id[j]] + ' ' + '</li>';
+                        document.getElementById("display").innerHTML += '<li>' + arrayOfItems[i][id[j]] + ' ' + '</li>' + '<br>';
                     }
                 }
             }
